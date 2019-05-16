@@ -2,7 +2,7 @@
 
 
 import sys
-from preprocess_data import Question
+from process_question import Question
 # 创建问题处理对象，这样模型就可以常驻内存
 que=Question()
 # Restorepip freeze > requirements.txt

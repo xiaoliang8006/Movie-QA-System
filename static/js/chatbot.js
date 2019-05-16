@@ -49,6 +49,7 @@ ChatBot.sendMessage = function () {
 
 ChatBot.Ajax = function(){
   $.ajax({
+      //部署到服务器时要改成服务器地址http://服务器IP:5000/search
       url: "http://127.0.0.1:5000/search",
       data: {q: chatInput.val()},
       type: "GET",

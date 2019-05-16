@@ -2,7 +2,7 @@
 import json
 from flask import Flask,request
 import sys
-from process_data import Question
+from process_question import Question
 
 
 def after_request(response):
@@ -36,4 +36,5 @@ def search():
 
 
 if __name__ == '__main__':
+    #部署到服务器时host要改成'0.0.0.0'
     app.run(debug=True, host='127.0.0.1', port=5000)
