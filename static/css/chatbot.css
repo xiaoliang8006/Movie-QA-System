@@ -1,0 +1,149 @@
+body{
+  background:#7EC1EE;
+  font-family:'Roboto Mono';
+}
+
+.clickable{
+	cursor:pointer;
+}
+
+.hidden{
+   visibility:hidden;
+}
+
+.shadowed{
+ -webkit-box-shadow: 3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+		 box-shadow:         3px 3px 23px 0px rgba(50, 50, 50, 0.75);
+}
+
+.chat-box{
+	display: inline-block;
+    border-radius: 8px;
+    padding: 20px;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    position: absolute;
+    background-color:#B0C4DE;
+}
+
+.chat-window-header{
+    font-size: 20px;
+    line-height: 1.6em;
+
+   background: rgb(255, 255, 255); /* The Fallback */
+   background: rgba(122, 122,122, 0.8);
+
+}
+
+.chat-screen{
+	width:500px;
+	height:400px;
+	background-color:white;
+	border: 1px solid #999;
+	padding: 10px;
+    overflow-y: scroll;
+}
+
+.chat-screen .sender{
+	color:red;
+    margin-right: 10px;
+}
+
+.chat-screen .sender.boto{
+	color:blue;
+}
+
+
+.chat-input{
+	width: 380px;
+    font-size: 20px;
+    margin-top: 10px;
+    border: 1px solid #999;
+    outline: none;
+
+}
+
+.chat-send{
+	padding:5px 30px;
+	display:inline-block;
+	background-color:#00FF7F;
+	vertical-align: bottom;
+}
+
+.chat-send.loading{
+    color: #B0C4DE;
+}
+
+.orb-holder{
+	text-align: center;
+	 height: 200px;
+    position: relative;
+}
+
+.orb{
+	position: absolute;
+    top: 0px;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#emoji{
+	position: absolute;
+    top: 0px;
+    width: 130px;
+    left: 51%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#mute-btn{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    float: right;
+    margin-top: 6px;
+    background-image:url('../images/mute_off.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+
+#mute-btn.on, #mute-btn:hover{
+    background-image:url('../images/mute_on.png') ;
+}
+
+#online{
+    margin-top:6%;
+    height:500px;
+    width:15%;
+    display:inline-block
+    margin-left:20px;
+    padding:1%;
+}
+
+#users{
+    top:120px;
+    background-color:white;
+    width:14.5%;
+    height:485px;
+
+    position:absolute;
+}
+
+#onlinenow{
+    background-color:lightblue;
+    color:red;
+    font-weight:bold;
+    font-family:arial;
+    font-size:1.9em;
+    text-align:center;
+    display:block;
+}
+.copyright{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    margin: 5px;
+}

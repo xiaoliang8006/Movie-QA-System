@@ -1,0 +1,5 @@
+flask==0.12.2
+py2neo==3
+jieba==0.39
+scikit_learn==0.20.3
+requests==2.18.4
