@@ -7,7 +7,7 @@ from py2neo import Graph
 class Query():
     def __init__(self):
         #这里暂时使用的是我的服务器数据库，你也可以搭建自己的本地数据库
-        self.graph=Graph("http://144.34.158.30:7474", username="neo4j",password="123456")
+        self.graph=Graph("http://104.224.145.185:7474", username="neo4j",password="123456")
     # 运行cql语句
     def run(self,cql):
         find_rela = self.graph.run(cql)

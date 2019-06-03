@@ -2,7 +2,7 @@
 
 #### 相关源代码GitHub上也有：[https://xiaoliang8006.github.io/Movie-QA-System](https://xiaoliang8006.github.io/Movie-QA-System)
 
-#### 体验地址：[http://144.34.158.30:5000](http://144.34.158.30:5000)
+#### 体验地址：[http://104.224.145.185:5000](http://104.224.145.185:5000)
 
 此项目旨在构建一个关于电影的知识图谱问答系统。目前知识库本身的内容并不全面，但是麻雀虽小，五脏俱全，该项目对多种类型的问题形式都能得到正确的相应结果。以“李连杰”为例，本系统能够回答晴李连杰的个人简介，参演过的电影，参演过的电影类型，参演某一类型的电影都有什么。还能查询某个电影的信息，如上映时间，评分，类型，演员列表等等....
 
@@ -75,25 +75,33 @@
 
 #### data文件夹
 
-首先是数据的准备，利用爬虫从维基和豆瓣上爬取电影数据及演员数据，这里我直接把数据预处理的结果放入了data文件夹
+&nbsp;&nbsp;&nbsp;&nbsp;首先是数据的准备，利用爬虫从维基和豆瓣上爬取电影数据及演员数据，这里我直接把数据预处理的结果放入了data文件夹
+
+#### questions文件夹
+
+&nbsp;&nbsp;&nbsp;&nbsp;放的是关于问题分类的训练数据
 
 #### data2neo4j.py
 
-将data文件夹下csv文件导入neo4j数据库。
+&nbsp;&nbsp;&nbsp;&nbsp;将data文件夹下csv文件导入neo4j数据库。注意这里我放上了我的服务器，可以直接用。你也可以用data2neo4j.py将数据导入到自己的本地服务器，并在question_template.py修改地址即可。
 
-import文件夹是neo4j默认的数据导入文件夹，所以首先要将data文件夹下所有csv文件拷贝到neo4j数据库的根目录import文件夹下，没有则先创建import文件夹，然后运行此程序。
+&nbsp;&nbsp;&nbsp;&nbsp;import文件夹是neo4j默认的数据导入文件夹，所以首先要将data文件夹下所有csv文件拷贝到neo4j数据库的根目录import文件夹下，没有则先创建import文件夹，然后运行此程序。
 
 #### question_classification.py
 
-对问题进行分类
+&nbsp;&nbsp;&nbsp;&nbsp;对问题进行分类
 
 #### question_template.py
 
-连接数据库，生成查询语句，返回结果
+&nbsp;&nbsp;&nbsp;&nbsp;连接数据库，生成查询语句，返回结果
 
 #### process_question.py
 
-分类并回答问题
+&nbsp;&nbsp;&nbsp;&nbsp;分类并回答问题
+
+#### static文件夹
+
+&nbsp;&nbsp;&nbsp;&nbsp;放的是关于前端显示的静态文件
 
 ## 评价
 
