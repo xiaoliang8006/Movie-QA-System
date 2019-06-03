@@ -2,7 +2,7 @@
 
 #### 相关源代码GitHub上也有：
 
-[https://github.com/xiaoliang8006/Movie-QA-System](https://github.com/xiaoliang8006/Movie-QA-Systems)
+[https://github.com/xiaoliang8006/Movie-QA-System](https://github.com/xiaoliang8006/Movie-QA-System)
 
 #### 体验地址：
 
